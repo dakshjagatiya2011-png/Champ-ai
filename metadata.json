@@ -1,0 +1,8 @@
+{
+  "name": "Champ AI",
+  "description": "Your personal intelligence workspace. Built for creators and visionaries by Daksh Jagatiya.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Champ AI</title>
+    <meta name="description" content="Champ AI - Your personal intelligence workspace." />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='11' fill='white'/><path d='M6 9H4.5a2.5 2.5 0 0 1 0-5H6' /><path d='M18 9h1.5a2.5 2.5 0 0 0 0-5H18' /><path d='M4 22h16' /><path d='M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22' /><path d='M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22' /><path d='M18 2H6v7a6 6 0 0 0 12 0V2Z' /></svg>" />
+    
+    <!-- PWA and Mobile Meta Tags -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Champ AI" />
+    <meta name="theme-color" content="#000000" />
+    
+    <!-- Structured Data for Google Search -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Champ AI",
+      "operatingSystem": "Web, iOS, Android",
+      "applicationCategory": "Intelligence Workspace",
+      "author": {
+        "@type": "Person",
+        "name": "Daksh Jagatiya"
+      },
+      "url": "https://www.champai.com"
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              zinc: {
+                850: '#1f1f22',
+                950: '#0c0c0e',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Dancing+Script:wght@400;500&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --bg-color: #000000;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--bg-color);
+        color: #fff;
+        overflow-x: hidden;
+        -webkit-tap-highlight-color: transparent;
+      }
+      .font-serif {
+        font-family: 'Playfair Display', serif;
+      }
+      
+      .fade-in {
+        animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      .scale-in-center {
+        animation: scale-in-center 0.5s cubic-bezier(0.23, 1, 0.32, 1) both;
+      }
+      @keyframes scale-in-center {
+        0% { transform: scale(0.92); opacity: 0; filter: blur(4px); }
+        100% { transform: scale(1); opacity: 1; filter: blur(0); }
+      }
+
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+      .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      .logo-glow {
+        box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
+      }
+
+      .btn-auth-hover {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .btn-auth-hover:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.3);
+      }
+    </style>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "@google/genai": "https://esm.sh/@google/genai@1.41.0",
+    "lucide-react": "https://esm.sh/lucide-react@0.564.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/"
+  }
+}
+</script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
